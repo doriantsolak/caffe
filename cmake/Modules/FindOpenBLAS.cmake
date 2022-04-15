@@ -10,6 +10,7 @@ SET(Open_BLAS_INCLUDE_SEARCH_PATHS
   /opt/OpenBLAS/include
   $ENV{OpenBLAS_HOME}
   $ENV{OpenBLAS_HOME}/include
+  ${WORKSPACE}/x86_64-linux-gnu-libgfortran3-cxx03/destdir/include/
 )
 
 SET(Open_BLAS_LIB_SEARCH_PATHS
@@ -26,6 +27,7 @@ SET(Open_BLAS_LIB_SEARCH_PATHS
         $ENV{OpenBLAS}/lib
         $ENV{OpenBLAS_HOME}
         $ENV{OpenBLAS_HOME}/lib
+        ${WORKSPACE}/x86_64-linux-gnu-libgfortran3-cxx03/destdir/lib/
  )
 
 FIND_PATH(OpenBLAS_INCLUDE_DIR NAMES cblas.h PATHS ${Open_BLAS_INCLUDE_SEARCH_PATHS})
